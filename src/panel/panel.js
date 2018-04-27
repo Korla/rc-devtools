@@ -5,7 +5,7 @@ const services = [
   'Workflow.Read',
 ];
 
-let selected = null;
+let selected = '';
 
 const App = {
   view: () => [

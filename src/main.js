@@ -1,6 +1,6 @@
 chrome.devtools.panels.create(
   "RayCare",
   null,
-  "panel.html",
+  "src/panel/panel.html",
   ({ show }) => show()
 );
