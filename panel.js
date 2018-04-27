@@ -18,3 +18,10 @@ const App = {
 }
 
 m.mount(document.body, App);
+
+chrome.devtools.network.onRequestFinished.addListener(
+  request => {
+    if (request.request.url.startsWith('ws'))
+      console.log('salmon', request.request.url, request);
+  }
+);
